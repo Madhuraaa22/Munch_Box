@@ -30,7 +30,7 @@ if(isset($_POST['username'], $_POST['password'])) {
         $_SESSION['loggedin'] = true;
 
         // Redirect user to dashboard or any other page after successful login
-        header("Location: http://localhost/feedback/main.html?username=" . urlencode($username)); // Pass the username as a parameter in the URL
+        header("Location: http://localhost/feedback/index.html?username=" . urlencode($username)); // Pass the username as a parameter in the URL
         exit(); // Ensure script execution stops after redirection
     } else {
         echo "Invalid username or password"; // Display error message if login fails
