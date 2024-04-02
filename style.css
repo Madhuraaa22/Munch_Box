@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-image: url("./img/food img.jpg");
+    background-size: repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+.log img {
+    padding-top: 20px;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:140px;
+    align-items: center;
+    padding: 0px 40px;
+    box-shadow: 10px 10px 10px lightgray;
+    background-color: #ffffff;
+    margin:0%;
+}
+.log{
+    font-size: 3.7rem;
+    color:rgb(0, 0, 0);
+    text-shadow: 5rem;
+}
+.nav{
+    position: relative;
+    right: 100px;
+}
+a{
+    padding:5px 30px;
+    color:rgb(0, 0, 0);
+    font-size: 20px;
+    text-decoration: none;
+    
+}
+a:hover{
+    color:antiquewhite;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    /*Updatewidth*/height: 100px;
+    /*Updateheight*/border-radius: 2px;
+    background-color: black;
+    color: orange;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}
+
+.button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding-top: 140px;
+    column-gap: 160px;
+}
+
+.choose_boxes {
+    justify-content: center;
+    display: flex;
+    display: inline-flex;
+    color: #000000;
+    column-gap: 184px;
+}
+
+.container1 {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+
+button.menuBut {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    color: orange;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 100px;
+    width: 300px;
+    margin-left: auto; /* Center button horizontally */
+    margin-right: auto; /* Center button horizontally */
+    margin-top: 20px; /* Adjust margin as needed */
+    background: black;
+}
+
+.options {
+    display: none;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.options h3, .options h4 {
+    margin-bottom: 10px;
+}
+
+.options .category {
+    margin-bottom: 15px;
+}
+
+.options input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.options label {
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.menu-item-image {
+    width: 200px; /* Adjust the width to your preference */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.lucky-food {
+    width: 30%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.lucky-food #foodQuote {
+    margin-top: 20px;
+}
+
+.lucky-food #foodQuote img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.lucky {
+    background-color: black;
+    color: orange;
+    border: none;
+    padding: 10%;
+    /* margin-top: 20px; */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.lucky:hover {
+    background-color: #333;
+}
+button #memeQuote .lucky{
+    margin-left: 1165px;
+}
+img[alt="Food Meme"] {
+    height: 186px;
+}
+.category {
+    display: inline-block;
+    margin-right: 20px; /* Adjust as needed */
+}
+button.submit-button {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background-color: #000000;
+    color: orange;
+    font-size: 20px; /* Corrected property */
+}
+
+/* Your existing CSS styles */
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Close button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+<body>
+    <audio id="clickSound">
+        <source src="audio/audioclick-mouse.mp3" type="audio/mpeg">
+    </audio>
+    <section class="home" id="home">
+        <div class="header">
+            <div class="log"><img src="img/munchbox_logo.png" height="80px" width="260px" alt="The Munch Box"></div>
+            <div class="nav">
+            
+            <a href="http://localhost/feedback/main.html">Home</a>
+            <a href="http://localhost/feedback/login.html">Login</a>
+            <a href="http://localhost/feedback/signup.html">Sign up</a>
+             </div>
+            </div>
+    <div class="container1">
+        <div class="content">
+            <div class="lucky-food">
+                <button class="lucky" onclick="fetchMemeQuote()">Generate Your Lucky Food for Today</button>
+                <div id="foodQuote"></div>
+            </div>
+        </div>
+        <div id="container">
+            <div id="button-container">
+                <div class="button" id="div1" onclick="toggleOptions('breakfastOptions')">Breakfast</div>
+                <div class="button" id="div2" onclick="toggleOptions('lunchOptions')">Lunch</div>
+                <div class="button" id="div3" onclick="toggleOptions('dinnerOptions')">Dinner</div>
+            </div>
+            <div id="additionalText"></div>
+            <div class="choose_boxes">
+                <form action="http://localhost/feedback/process_choices.php" method="post">
+
+                    <div class="options" id="breakfastOptions">
+                        <h3>Choose your today's Breakfast!</h3>
+                        <div class="category">
+                            <h4>Vegetarian</h4>
+                            <input type="radio" id="option1" name="breakfast" value="Poha">
+                            <label for="option1">Poha</label><br>
+                            <input type="radio" id="option2" name="breakfast" value="Upma">
+                            <label for="option2">Upma</label><br>
+                        </div>
+                        <div class="category">
+                            <h4>Non-Vegetarian</h4>
+                            <input type="radio" id="option3" name="breakfast" value="Omelet Bread">
+                            <label for="option3">Omelet Bread</label><br>
+                            <input type="radio" id="option4" name="breakfast" value="Anda Bhurji">
+                            <label for="option4">Anda Bhurji</label><br>
+                        </div>
+                    </div>
+                    <!-- Similar options for lunch and dinner -->
+                    <div class="options" id="lunchOptions">
+                        <h3>Choose your today's Lunch!</h3>
+                        <div class="category">
+                            <h4>Vegetarian</h4>
+                            <input type="radio" id="option5" name="lunch" value="Poha">
+                            <label for="option5">Poha</label><br>
+                            <input type="radio" id="option6" name="lunch" value="Misal Pav">
+                            <label for="option6">Misal Pav</label><br>
+                        </div>
+                        <div class="category">
+                            <h4>Non-Vegetarian</h4>
+                            <input type="radio" id="option7" name="lunch" value="Omelet Bread">
+                            <label for="option7">Omelet Bread</label><br>
+                            <input type="radio" id="option8" name="lunch" value="Anda Bhurji">
+                            <label for="option8">Anda Bhurji</label><br>
+                        </div>
+                    </div>
+                    <div class="options" id="dinnerOptions">
+                        <h3>Choose your today's Dinner!</h3>
+                        <div class="category">
+                            <h4>Vegetarian</h4>
+                            <input type="radio" id="option9" name="dinner" value="Pulav">
+                            <label for="option9">Pulav</label><br>
+                            <input type="radio" id="option10" name="dinner" value="Panner Gravy">
+                            <label for="option10">Panner Gravy</label><br>
+                        </div>
+                        <div class="category">
+                            <h4>Non-Vegetarian</h4>
+                            <input type="radio" id="option11" name="dinner" value="Biryani">
+                            <label for="option11">Biryani</label><br>
+                            <input type="radio" id="option12" name="dinner" value="Chicken Gravy">
+                            <label for="option12">Chicken Gravy</label><br>
+                        </div>
+                    </div>
+                    <input type="submit" value="Submit" class="submit-button">
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
+

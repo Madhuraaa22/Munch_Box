@@ -1,0 +1,243 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+
+.log img {
+  padding-top: 20px;
+}
+
+.home{
+    width:100%;
+    max-height: 100vh;
+    background-image: url("img/head.jpg");
+    background-repeat:no-repeat;
+    background-size: contain;
+    background-position:left;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:80px;
+    align-items: center;
+    padding: 0px 40px;
+    box-shadow: 10px 10px 10px lightgray;
+    margin:0%;
+}
+.fade-in-text {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 4rem;
+    animation: fadeIn 7s;
+    text-align:center;
+    text-wrap:balance;
+    position: absolute;
+    margin-top:10%;
+    margin-left: 65%;
+    line-height:6rem;
+  }
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }  
+
+.log{
+    font-size: 3.7rem;
+    color:rgb(0, 0, 0);
+    text-shadow: 5rem;
+}
+.nav{
+    position: relative;
+    right: 100px;
+}
+a{
+    padding:5px 30px;
+    color:rgb(0, 0, 0);
+    font-size: 20px;
+    text-decoration: none;
+    
+}
+a:hover{
+    color:antiquewhite;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+button{
+    margin:25px 0;
+    height: 170px;
+    width: 180px;
+    cursor: pointer;
+    background:rgba(0, 0, 0, 0.6);
+    background-repeat: no-repeat;
+    background-position: 50% 15%;
+    font-size: 20px;
+    color:rgb(255, 255, 255);
+    border-radius: 90%;
+    overflow: visible;
+    line-height:260px;
+    border-color:black;
+    border-width: 2px;
+}
+button:hover{
+    background-color:rgba(59, 90, 34, 0.79);
+    color:white;
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.2);
+}
+.side
+{   max-height: 90vh;
+    display:flex;
+    flex-direction: column;
+    margin:0px;
+}
+.one{
+    margin-left: 45%;
+    background-image: url("img/icon8.png");
+    }
+.two{
+    margin-left: 50%;
+    background-image: url("img/icon9.png");
+}
+.three{
+    margin-left: 45%;
+    background-image: url("img/icon10.png");
+    
+}
+.slogan{
+    padding:5%;
+    display:flex;
+    height:max-content;
+    background-color: rgba(241, 224, 199, 0.31);
+
+ 
+
+.sl{ 
+    
+    width: 70%;
+    font-style: italic;
+    font-size: 3.5rem;
+    padding:0 0 0 5%;
+    animation: fadeIn 5s;
+    text-align: center;
+    
+}
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }  
+
+.im{ 
+    width:40%;
+    padding-left: 20%;
+
+}
+.about{
+    text-align: center;
+    padding:5% 12%;    
+    font-size: 1.5rem;
+    max-width: 100%;
+    line-height: 2.5rem;
+    background-color: rgba(247, 230, 208, 0.815);
+}
+
+.about h1{
+    color:brown;
+    
+}
+
+.footer{
+    padding: 2% 0%;
+     background-color: rgb(239, 220, 196);
+    font-size:17px ;
+    max-width: 100%;
+    display: flex;
+   line-height: 25px;
+}
+.follow1{
+    width: 65%;
+    padding-left: 7%;
+}
+.follow2{
+    width:35%;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+.fa {
+    padding:20px 50px;
+    font-size: 30px;
+    width:1px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    justify-content:space-between;
+
+  }
+.fa:hover {
+    opacity: 0.8;
+  }
+.fa-facebook {
+    background-color: rgb(239, 220, 196);
+    color:brown;
+  }
+.fa-twitter {
+    background-color: rgb(239, 220, 196);
+    color:brown;
+  }
+  
+.fa-instagram {
+    background-color: rgb(239, 220, 196);
+    color:brown;
+  }
+  
+.fa-youtube {
+    background-color: rgb(239, 220, 196);
+    color:brown;
+  }
+
+
+  .slogan {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s, transform 1.5s;
+  }
+  .slogan.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .about {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s, transform 1.5s;
+  }
+  .about.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .footer{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s, transform 1.5s;
+  }
+  .footer.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  
+  
+  @keyframes dance {
+    0% { transform: translateY(0); }
+    25% { transform: translateY(-3px); }
+    50% { transform: translateY(0); }
+    75% { transform: translateY(3px); }
+    100% { transform: translateY(0); }
+  }
+  
+  .dots {
+    display: inline-block;
+    animation: dance 2s 4;
+  }

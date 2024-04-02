@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pillai college| Girls hostel| Mess management</title>
+    <link type="text/css" rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+     <!-- Define JSON data for social media links -->
+     <script>
+        var socialMediaLinks = [
+            { "platform": "Facebook", "url": "https://www.facebook.com/pillaicollege/" },
+            { "platform": "Twitter", "url": "https://twitter.com/pillaicollege?lang=en" },
+            { "platform": "Instagram", "url": "https://www.instagram.com/pillaiscollege/?hl=en" },
+            { "platform": "YouTube", "url": "https://www.youtube.com/@PillaiGroupOnline/videos" }
+        ];
+    </script>
+</head>
+<body>
+    
+    <script>
+        // Function to get the value of a URL parameter by name
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, '\\$&');
+            var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, ' '));
+        }
+
+        // Get the username from the URL parameter
+        var username = getParameterByName('username');
+
+        // Display welcome message with the username in a window alert
+        if (username) {
+        
+            // Replace the dialog with a window alert
+            alert('Welcome, ' + username + ', Share your munch boxes now!');
+
+         }
+    </script>     
+
+    <section class="home" id="home">
+    <div class="header">
+        <div class="log"><img src="img/munchbox_logo.png" height="80px" width="260px" alt="The Munch Box"></div>
+        <div class="nav">
+        
+        <a href="#about">About us</a>
+        <a href="#footer">Contact us</a>
+        <a href="http://localhost/feedback/login.html">Login</a>
+        <a href="http://localhost/feedback/signup.html">Sign up</a>
+         </div>
+        </div>
+        <span class="fade-in-text">Where warmth<br>meets wellness<br><span class="dots">......</span></span>
+        <div class="side">
+           <a href="http://localhost/feedback/menu.html"> <button class="one">Menu</button></a>
+           <a href="img/timetable.jpg"><button class="two">Timetable</button></a>
+           <a href="http://localhost/feedback/form.html"><button class="three">Feedback</button></a> 
+        </div>
+        
+        </section>
+   
+<div class="slogan">
+   <div class="sl">Jevlis ka?.........Nahi na.<br>
+        YE MAGH
+    </div>
+    <div class="im"> 
+        <img src="img/pav.gif" alt="COME" height="190px" width="250px">
+    </div>
+</div>
+<div class="about" id="about">
+      <h1>About us</h1><br>
+    <p>"The Munch Box"  website is created by a group of four-Madhura Tembe, Srushti Jaiswal, Shivanki Bhaisare and Vishakha Karande from S.E I.T department for the ease of Pillai college's Girls 
+    hostel students. Here you can find the weekly hostel mess timetable, accordingly the menu items along with poll-where u can select the item you want for the supper. Lastly there is 
+    a feedback feature for your selected menu item.
+    </p>
+    </div>
+   
+<div class="footer" id="footer">
+    <div class="follow1">
+        <b>College Address</b>=Dr. K. M. Vasudevan Pillai Campus, 
+        <br>Plot No. 10, Sector 16, New Panvel East, <br>Panvel, Navi Mumbai, Maharashtra 410206<br><b>Hostel Address</b>=Pillai Girls Hostel
+        <br>Plot No. 21, Sector 16
+        <br>New Panvel, Navi Mumbai - 410206<br>
+        <b>Contact details:</b>
+        <br>Contact no: 9167103484<br>
+       </div> 
+    <div class="follow2">
+       <b> Follow us on:</b>
+            <br>
+        </div>
+    </div>
+
+<script src="script1.js"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hostel Feedback Form</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  .container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color:#bdfddb;
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  form {
+    margin-bottom: 20px;
+  }
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+   .emoji-input {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    .emoji-input label {
+        flex: 1;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    .emoji-input input[type="radio"] {
+        display: inline;
+    }
+    
+    .emoji-input input[type="radio"] + img {
+        width: 20px;
+        height: 20px;
+        cursor: pointer ;
+    }
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 10px solid #ccc;
+    box-sizing: border-box;
+  }
+  textarea {
+    height: 100px;
+
+  }
+  input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  /* Media queries for responsiveness */
+@media only screen and (min-width: 600px) {
+    .container {
+        max-width: 800px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 1000px;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1><u>Hostel Food Feedback Form</u></h1><hr>
+  <form action="feedback1.php" method="post">
+    <div class="form-group">
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" required><br><br><br>
+      <label for="checkbox"></label>
+      <input type="checkbox" id="Breakfast" name="c1" value="Breakfast">Breakfast
+      <input type="checkbox" id="Lunch" name="c2" value="Lunch">Lunch
+      <input type="checkbox" id="Dinner" name="c3" value="Dinner">Dinner<br><br><br>
+
+      <label for="name"> Food Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+
+ <div class="container">
+    <form action="feedback1.php" method="post">
+        <div class="emoji-input">
+          <h4>FoodQuality</h4>
+           <input type="radio" id="happy" name="FoodQuality" value="Happy">
+            <label for="happy"><img src="https://emojicdn.elk.sh/😊" alt="Happy" height="25" width="25"></label>
+             <input type="radio" id="neutral" name="FoodQuality" value="Neutral">
+            <label for="neutral"><img src="https://emojicdn.elk.sh/😐" alt="Neutral" height="25" width="25"></label>
+            <input type="radio" id="sad" name="FoodQuality" value="Sad">
+            <label for="sad"><img src="https://emojicdn.elk.sh/😢" alt="Sad" height="25" width="25"></label>
+            <h4>FoodTaste</h4>
+            <input type="radio" id="happy" name="FoodTaste" value="Happy">
+            <label for="happy"><img src="https://emojicdn.elk.sh/😊" alt="Happy" height="25" width="25"></label>
+             <input type="radio" id="neutral" name="FoodTaste" value="Neutral">
+            <label for="neutral"><img src="https://emojicdn.elk.sh/😐" alt="Neutral" height="25" width="25"></label>
+            <input type="radio" id="sad" name="FoodTaste" value="Sad">
+            <label for="sad"><img src="https://emojicdn.elk.sh/😢" alt="Sad" height="25" width="25"></label>
+
+            <h4>Hygiene</h4>
+            <input type="radio" id="happy" name="Hygiene" value="Happy">
+            <label for="happy"><img src="https://emojicdn.elk.sh/😊" alt="Happy" height="25" width="25"></label>
+             <input type="radio" id="neutral" name="Hygiene" value="Neutral">
+            <label for="neutral"><img src="https://emojicdn.elk.sh/😐" alt="Neutral" height="25" width="25"></label>
+            <input type="radio" id="sad" name="Hygiene" value="Sad">
+            <label for="sad"><img src="https://emojicdn.elk.sh/😢" alt="Sad" height="25" width="25"></label>
+        </div>
+
+    <div class="form-group">
+      <label for="Feedback">Feedback:</label>
+      <textarea id="Feedback" name="Feedback" required></textarea>
+    </div>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+<style>
+    .container {
+        background-image: url("https://i.pinimg.com/originals/01/73/4c/01734c3234caa6e6ff530bcd1ad3c41d.jpg");
+        background-size: cover;
+        background-position: center;
+        /* Additional CSS properties */
+    }
+</style>
+
+</body>
+
+</html>
