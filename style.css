@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: url("food img.jpg");
+    background-image:url("food img.jpg");
     background-size: repeat;
     height: 100vh;
     display: flex;
