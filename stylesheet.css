@@ -106,6 +106,7 @@ button:hover{
     
 }
 .slogan{
+    margin-top:10px;
     padding:5%;
     display:flex;
     height:max-content;
