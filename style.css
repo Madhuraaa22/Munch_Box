@@ -20,7 +20,7 @@ body {
     padding-top: 20px;
 }
 
-.header{
+.heade{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -31,12 +31,12 @@ body {
     background-color: #ffffff;
     margin:0%;
 }
-.log{
+.lo{
     font-size: 3.7rem;
     color:rgb(0, 0, 0);
     text-shadow: 5rem;
 }
-.nav{
+.na{
     position: relative;
     right: 100px;
 }
@@ -106,7 +106,7 @@ a:hover{
 }
 
 .choose_boxes {
-    justify-content: center;
+   0 justify-content: center;
     display: flex;
     display: inline-flex;
     color: #000000;
